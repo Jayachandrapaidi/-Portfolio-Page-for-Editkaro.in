@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editkaro.in - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1 class="logo">Editkaro.in</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-text">
+      <h2>We Create <span id="typing"></span></h2>
+      <p>Social media marketing & video editing agency bringing your ideas to life.</p>
+      <a href="https://jayachandrapaidi.github.io/Portfolio/" class="btn">Explore Portfolio</a>
+    </div>
+  </section>
+  
+  <!-- About -->
+  <section id="about" class="about">
+  <div class="about-container">
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>
+        At <span class="highlight">Editkaro.in</span>, we're passionate about transforming raw footage into
+        captivating stories. From <b>short-form social edits</b> to <b>long-form documentaries, gaming montages, ads, and anime edits</b>, our creative team ensures every video leaves a lasting impact.
+      </p>
+      <p>
+        Our mission is simple: <i>to help brands and creators tell their story through powerful, engaging videos</i> that connect with audiences.
+      </p>
+    </div>
+    <div class="about-image">
+      <img src="videos/image.jpg" alt="Creative video editing setup">
+    </div>
+  </div>
+</section>
+
+
+  <!-- Filter Buttons -->
+  <div class="filter-buttons">
+    <button class="active" data-filter="all">All</button>
+    <button data-filter="short">Short-form</button>
+    <button data-filter="long">Long-form</button>
+    <button data-filter="gaming">Gaming</button>
+    <button data-filter="ads">Ads</button>
+    <button data-filter="anime">Anime</button>
+  </div>
+
+  <!-- Portfolio Grid -->
+   <video src="https://videos.pexels.com/video-files/856023/pexels-video.mp4" muted></video>
+  <section class="portfolio" id="portfolio">
+    <div class="item short">
+      <video src="videos/short.mp4" muted></video>
+      <div class="overlay"><span>▶</span> Short-form Video</div>
+    </div>
+
+    <div class="item long">
+      <video src="videos/long.mp4" muted></video>
+      <div class="overlay"><span>▶</span> Long-form Video</div>
+    </div>
+
+    <div class="item gaming">
+      <video src="videos/gaming.mp4" muted></video>
+      <div class="overlay"><span>▶</span> Gaming Edit</div>
+    </div>
+
+    <div class="item ads">
+      <video src="videos/ads.mp4" muted></video>
+      <div class="overlay"><span>▶</span> E-commerce Ad</div>
+    </div>
+
+    <div class="item anime">
+      <video src="videos/anime.mp4" muted></video>
+      <div class="overlay"><span>▶</span> Anime Edit</div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span id="close">&times;</span>
+    <span id="prev">&#10094;</span>
+    <video id="lightboxVideo" controls autoplay></video>
+    <span id="next">&#10095;</span>
+  </div>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p>Or reach us: <a href="mailto:jayachandrapaidi2004@gmail.com">jayachandrapaidi2004@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Editkaro.in | Jayachandra P. All rights reserved.</p>
+    
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
